@@ -470,10 +470,3 @@ def web_scraping(product_list):
 
 # Run the function
 retrieve_latest_vulnerability_updates()
-
-
-# ALL I NEED TO WORK ON
-
-# 1) For each product, write the code to get the latest update status (see if have existing RSS Feed)
-# 2) When selected, extract the website content
-# 3) Save all the output into excel, seperated by tabs
