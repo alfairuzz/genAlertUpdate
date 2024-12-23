@@ -20,7 +20,7 @@ def get_openssl_updates():
         else:
             vulns = []
             # Each vulnerability is represented by <h4 id="CVE-..."> followed by a <dl>
-            for h4 in article.select('h4[id^="CVE-"]'):
+            for h4 in article.select('h3[id^="CVE-"]'):
                 cve_id = h4.get('id')
                 title_elem = h4.find('a')
                 cve_link = title_elem.get('href') if title_elem else None
